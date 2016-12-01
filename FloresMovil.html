@@ -1,0 +1,76 @@
+º   <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> <!-- http://jquerymobile.com/download/-->
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="css/themes/estilo.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    </head>
+
+    <body>
+
+        <div data-role="page" id="login"> <!--En id llevará el nombre de la pagina-->            
+            <div data-role="header">
+
+                <h1> Floristeria Emi </h1>                 
+
+            </div>
+
+            
+            <div data-role="main" class="ui-content">
+                <form id="formulario">
+      			<label for="nombredeusuario">Usuario</label>
+      			<input type="text" id="nombredeusuario" name="nombredeusuario" data-clear-btn="true">
+      			<label for="clave">Password</label>
+     			<input type="password" id="clave" name="clave" data-clear-btn="true">
+      			 <a href="#principal" data-transition="fade" class="ui-btn">Entrar</a>
+			</form>	
+                
+            </div>
+            
+            <div data-role="footer"data-position="fixed">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a data-transition="fade" data-icon="phone" id="id5" href="#contactar">Contactar</a></li>
+                        <li><a data-transition="fade" data-icon="info" id="id4" href="javascript:;">Front Office</a></li>
+                        <li><a href="" data-transition="fade" data-icon="grid" data-rel="dialog" data-theme="a">Emi</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div data-role="page" id="principal"data-theme="b">
+		<div data-role="header">
+			<h1>Floristeria Emi</h1>
+		</div>
+
+        <div data-role="main" class="ui-content">
+            <div data-role="controlgroup" data-type="vertical">
+				        <a href="#" class="ui-btn" data-transition="flip"> Flores </a>
+                        <a href="#" class="ui-btn" data-transition="flip"> Ramos </a>
+                        <a href="#" class="ui-btn" data-transition="flip"> Accesorios </a>
+                        <a href="#" class="ui-btn" data-transition="flip"> Centros </a>
+                    </div>
+
+		</div>
+
+        <div data-role="footer"data-position="fixed">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a data-transition="fade" data-icon="phone" id="id5" href="#contactar">Contactar</a></li>
+                        <li><a data-transition="fade" data-icon="info" id="id4" href="javascript:;">Front Office</a></li>
+                        <li><a href="" data-transition="fade" data-icon="grid" data-rel="dialog" data-theme="a">Emi</a></li>
+                    </ul>
+                </div>
+
+            </div>
+			  
+    
+    </body>
+</html>
